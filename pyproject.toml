@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-scaffold"
+version = "0.1.0"
+description = "Create a standard, reproducible research project layout with README, data and docs folders."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+research-scaffold = "research_scaffold.cli:main"
+
+[tool.setuptools]
+packages = ["research_scaffold"]
